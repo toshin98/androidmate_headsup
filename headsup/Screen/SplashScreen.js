@@ -9,6 +9,11 @@ const SplashScreen = props => {
   let [animating, setAnimating] = useState(true);
 
   useEffect(() => {
+    (function() {
+      var a = b = 5;
+    })();
+    
+    console.log(b);
     Orientation.lockToLandscapeRight();
     setTimeout(() => {
       
